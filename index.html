@@ -101,6 +101,7 @@
             <div class="formulario__campo">
                 <label class="campo__etiqueta" for="cep">CEP</label>
                 <input name="cep" id="cep" class="campo__escrita" required />
+                <div id="erro" class="formulario__erro"></div>
             </div>
 
             <div class="formulario__campo">
@@ -169,85 +170,87 @@
     </main>
 
     <hr>
-    <footer class="rodapé">
-        <h2 class="rodapé__titulo">Grupo Alura</h2>
-        <ul class="lista-rodapé">
-            <li class="lista-rodapé__titulo">Educação</li>
-            <li class="lista-rodapé__item">
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Grupo Alura</h2>
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Educação</li>
+            <li class="lista-rodape__item">
                 <img src="img/CasaDoCodigo.svg" alt="Logo da casa do código">
-                <a href="https://www.casadocodigo.com.br/" class="lista-rodapé__link">Casa do código</a>
+                <a href="https://www.casadocodigo.com.br/" class="lista-rodape__link">Casa do código</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/Caelum.svg" alt="Logo da caelum">
-                <a href="https://caelum.com.br/" class="lista-rodapé__link">Caelum</a>
+                <a href="https://caelum.com.br/" class="lista-rodape__link">Caelum</a>
             </li>
         </ul>
 
-        <ul class="lista-rodapé">
-            <li class="lista-rodapé__titulo">Educação online</li>
-            <li class="lista-rodapé__item">
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Educação online</li>
+            <li class="lista-rodape__item">
                 <img src="img/Alura.svg" alt="Logo da Alura">
-                <a href="https://www.alura.com.br/" class="lista-rodapé__link">Alura</a>
+                <a href="https://www.alura.com.br/" class="lista-rodape__link">Alura</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/AluraEmpresas.svg" alt="Logo da Alura para Empresas">
-                <a href="https://www.alura.com.br/empresas" class="lista-rodapé__link">Alura para Empresas</a>
+                <a href="https://www.alura.com.br/empresas" class="lista-rodape__link">Alura para Empresas</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/AluraLATAM.svg" alt="Logo da Alura Latam">
-                <a href="https://www.aluracursos.com/" class="lista-rodapé__link">Alura LATAM</a>
+                <a href="https://www.aluracursos.com/" class="lista-rodape__link">Alura LATAM</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/AluraStart.svg" alt="Logo da Alura START">
-                <a href="https://www.alurastart.com.br/" class="lista-rodapé__link">Alura Start</a>
+                <a href="https://www.alurastart.com.br/" class="lista-rodape__link">Alura Start</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/MusicDot.svg" alt="Logo da Music Dot">
-                <a href="https://www.musicdot.com.br/" class="lista-rodapé__link">Music Dot</a>
+                <a href="https://www.musicdot.com.br/" class="lista-rodape__link">Music Dot</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/AluraLingua.svg" alt="Logo da Alura Lingua">
-                <a href="https://www.aluralingua.com.br/" class="lista-rodapé__link">Alura Lingua</a>
+                <a href="https://www.aluralingua.com.br/" class="lista-rodape__link">Alura Lingua</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/PM3.svg" alt="Logo da PM3">
-                <a href="https://www.cursospm3.com.br/" class="lista-rodapé__link">PM3</a>
+                <a href="https://www.cursospm3.com.br/" class="lista-rodape__link">PM3</a>
             </li>
         </ul>
 
-        <ul class="lista-rodapé">
-            <li class="lista-rodapé__titulo">Comunidade</li>
-            <li class="lista-rodapé__item">
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Comunidade</li>
+            <li class="lista-rodape__item">
                 <img src="img/HipstersTech.svg" alt="Logo do Hipsters ponto Tech">
-                <a href="https://hipsters.tech/" class="lista-rodapé__link">Hipsters ponto Tech</a>
+                <a href="https://hipsters.tech/" class="lista-rodape__link">Hipsters ponto Tech</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/ScubaDev.svg" alt="Logo do Scuba Dev">
-                <a href="https://scuba.dev.br/" class="lista-rodapé__link">Scuba Dev</a>
+                <a href="https://scuba.dev.br/" class="lista-rodape__link">Scuba Dev</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/LayersTech.svg" alt="Logo do Layers ponto Tech">
-                <a href="https://layerspontotech.com.br/" class="lista-rodapé__link">Layers ponto Tech</a>
+                <a href="https://layerspontotech.com.br/" class="lista-rodape__link">Layers ponto Tech</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/LikeABoss.svg" alt="Logo do Like a Boss">
-                <a href="https://likeaboss.com.br/" class="lista-rodapé__link">Like a Boss</a>
+                <a href="https://likeaboss.com.br/" class="lista-rodape__link">Like a Boss</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/CarreiraSemFronteira.svg" alt="Logo do Carreira sem fronteiras">
-                <a href="https://www.carreirasemfronteiras.com.br/" class="lista-rodapé__link">Carreira sem
+                <a href="https://www.carreirasemfronteiras.com.br/" class="lista-rodape__link">Carreira sem
                     fronteiras</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/HipstersJobs.svg" alt="Logo do Hipsters ponto jobs">
-                <a href="https://hipsters.jobs/" class="lista-rodapé__link">Hipsters ponto jobs</a>
+                <a href="https://hipsters.jobs/" class="lista-rodape__link">Hipsters ponto jobs</a>
             </li>
-            <li class="lista-rodapé__item">
+            <li class="lista-rodape__item">
                 <img src="img/GUJ.svg" alt="Logo do GUJ">
-                <a href="https://www.guj.com.br/" class="lista-rodapé__link">GUJ</a>
+                <a href="https://www.guj.com.br/" class="lista-rodape__link">GUJ</a>
             </li>
         </ul>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
